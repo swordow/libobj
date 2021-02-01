@@ -168,6 +168,7 @@ static void InitializeParserState(ObjParserState* state, const char* outfileName
     state->EndRawGroup  = 0;
     state->Error[0]     = 0;
     state->MtlLib.Name[0] = 0;
+    state->MtlLib.Mtls = 0;
     state->EndMtl = 0;
 #if DEBUG_OUTPUT
     state->OutFile =  fopen(outfileName, "wt");
