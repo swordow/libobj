@@ -135,6 +135,7 @@ static void* LoadFileBuffer(const char* file, uint32_t* bytes)
         }
     }
     *bytes = pos;
+    fclose(f);
     return buffer;
 }
 
